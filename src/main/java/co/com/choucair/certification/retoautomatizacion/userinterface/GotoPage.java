@@ -1,7 +1,7 @@
 package co.com.choucair.certification.retoautomatizacion.userinterface;
 
 
-import net.serenitybdd.core.pages.PageObject;
+
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 

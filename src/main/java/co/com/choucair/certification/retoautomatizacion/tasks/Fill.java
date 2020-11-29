@@ -26,15 +26,15 @@ public class Fill implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-        String dateOfBirth[]=user.getDateOfBirth().split("-");
+
 
         actor.attemptsTo(Enter.theValue(user.getFirstName()).into(FillPage.FIRST_NAME),
                 Enter.theValue(user.getLastName()).into(FillPage.LAST_NAME),
                 Enter.theValue(user.getEmail()).into(FillPage.EMAIL),
                 Click.on(FillPage.SELECT_DATE_OF_BIRTH_DAY),
-                SelectFromOptions.byVisibleText(dateOfBirth[0]).from(FillPage.SELECT_DATE_OF_BIRTH_MONTH),
-                SelectFromOptions.byVisibleText(dateOfBirth[1]).from(FillPage.SELECT_DATE_OF_BIRTH_DAY),
-                SelectFromOptions.byVisibleText(dateOfBirth[2]).from(FillPage.SELECT_DATE_OF_BIRTH_YEAR),
+                SelectFromOptions.byVisibleText(user.getDateOfBirth().split("-")[0]).from(FillPage.SELECT_DATE_OF_BIRTH_MONTH),
+                SelectFromOptions.byVisibleText(user.getDateOfBirth().split("-")[1]).from(FillPage.SELECT_DATE_OF_BIRTH_DAY),
+                SelectFromOptions.byVisibleText(user.getDateOfBirth().split("-")[2]).from(FillPage.SELECT_DATE_OF_BIRTH_YEAR),
                 Click.on(FillPage.BUTTON_NEXT_LOCATION),
                 WaitUntil.the(FillPage.CITY_SPAN, WebElementStateMatchers.isVisible()),
                 Clear.field(FillPage.CITY),
