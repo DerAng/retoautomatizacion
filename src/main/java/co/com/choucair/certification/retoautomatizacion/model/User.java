@@ -6,8 +6,12 @@ public class User {
     private String lastName;
     private String  email;
     private String dateOfBirth;
-    private String city;
-    private String postalCode;
+    private String city; // No es prioritario
+    private String postalCode;  // No es prioritario
+    private String country;
+    private String computer;
+    private String version;
+    private String lenguage;
     private String password;
     private String confirmPassword;
 
@@ -72,5 +76,37 @@ public class User {
     }
     public void setConfirmPassword(String confirmPassword) {
         this.confirmPassword = confirmPassword;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getComputer() {
+        return computer;
+    }
+
+    public void setComputer(String computer) {
+        this.computer = computer;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
+    public String getLenguage() {
+        return lenguage;
+    }
+
+    public void setLenguage(String lenguage) {
+        this.lenguage = lenguage;
     }
 }

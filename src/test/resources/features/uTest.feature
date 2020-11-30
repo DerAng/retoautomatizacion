@@ -13,8 +13,8 @@ Feature: uTest platform
 
     When she fills out the registration form
 
-      | firstName    |  lastName    |  email     |   dateOfBirth   |  city    | postalCode  |   password   | confirmPassword   |
-      | <firstName>  |  <lastName>  |  <email>   |   <dateOfBirth> |  <city>  | <postalCode>|   <password> | <confirmPassword> |
+      | firstName    |  lastName    |  email     |   dateOfBirth   |  city    | postalCode  |  country   |    computer      |   version    |    lenguage    |password       | confirmPassword   |
+      | <firstName>  |  <lastName>  |  <email>   |   <dateOfBirth> |  <city>  | <postalCode>|  <country> |   <computer>     |  <version>   |    <lenguage>  | <password>    | <confirmPassword> |
 
 
     Then she finds the message called The last step
@@ -22,6 +22,6 @@ Feature: uTest platform
 
     Examples:
 
-      | firstName  |  lastName |  email                   |   dateOfBirth    |   city      | postalCode |    password               |  confirmPassword           |
-      | Ana        | Medina    |  testChoucair3@gmail.com |   August-12-1994 |   Bogota    |   110111   |   Anamedinavillarreal9410 |   Anamedinavillarreal9410  |
+      | firstName  |  lastName |  email                   |   dateOfBirth    |   city      | postalCode |   country    | computer    |   version     |  lenguage      |   password                |  confirmPassword           |
+      | Ana        | Medina    |  testChoucair3@gmail.com |   August-12-1994 |   Bogota    |   110111   |   Colombia   |   Windows   |    XP         |   Spanish      | Anamedinavillarreal9410   |   Anamedinavillarreal9410  |
 

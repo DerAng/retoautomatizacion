@@ -29,6 +29,8 @@ public class FillPage  {
         public static final Target BUTTON_NEXT_LOCATION = Target.the("Button Next")
                 .located(By.xpath("//a[contains(@class,'btn btn-blue')]"));
 
+
+
         public static final Target CITY_SPAN = Target.the("Wait in City")
                 .located(By.xpath("//span[contains(@ng-show,'autoDetectAddress.city')]"));
 
@@ -41,11 +43,40 @@ public class FillPage  {
         public static final Target POSTAL_CODE = Target.the("Postal Code field")
                 .located(By.name("zip"));
 
+         public static final Target LIST_COUNTRY = Target.the("")
+                .located(By.name("countryId"));
+
+        public static final Target SELECT_LIST_COUNTRY = Target.the("")
+                .located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[1]/div[4]/div[2]/div/div/input[1]"));
+
         public static final Target BUTTON_NEXT_DEVICES = Target.the("Button Next")
                 .located(By.xpath("//a[contains(@class,'btn btn-blue pull-right')]/span"));
 
+
+
+
+        public static final Target LIST_COMPUTER = Target.the("")
+                .located(By.name("osId"));
+
+        public static final Target SELECT_LIST_COMPUTER = Target.the("")
+                .located(By.xpath("//*[@id=\"web-device\"]/div[1]/div[2]/div/input[1]"));
+
+        public static final Target LIST_VERSION = Target.the("")
+                .located(By.name("osVersionId"));
+
+        public static final Target SELECT_LIST_VERSION = Target.the("")
+                .located(By.xpath("//*[@id=\"web-device\"]/div[2]/div[2]/div/input[1]"));
+
+        public static final Target LIST_LENGUAGE = Target.the("")
+                .located(By.name("osLanguageId"));
+
+        public static final Target SELECT_LIST_LENGUAGE = Target.the("")
+                .located(By.xpath("//*[@id=\"web-device\"]/div[3]/div[2]/div/input[1]"));
+
         public static final Target BUTTON_LAST_STEP = Target.the("Button Next")
                 .located(By.xpath("//a[contains(@class,'btn btn-blue pull-right')]/span"));
+
+
 
         public static final Target PASSWORD = Target.the("Password field")
                 .located(By.id("password"));

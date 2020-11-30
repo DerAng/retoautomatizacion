@@ -19,6 +19,7 @@ public class Answer implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
+
        boolean result;
        String nameMessage= Text.of(SearchMessagePage.NAME_MESSAGE).viewedBy(actor).asString();
 
